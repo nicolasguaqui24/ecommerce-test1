@@ -1,0 +1,79 @@
+/* Contenedor principal del header */
+.header {
+    background: #1b4332;
+    color: rgb(236, 236, 236);
+    padding: 0 2rem;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+    color: #fff;
+  }
+  
+  /* Buscador — ocupa el espacio disponible entre logo y carrito */
+  .buscador {
+    flex: 1;
+    max-width: 480px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .buscador input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0.5rem 0.9rem;
+    font-size: 0.95rem;
+    color: #1e293b;
+    background: transparent;
+  }
+  
+  .buscador button {
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 0.85rem;
+    background: transparent;
+  }
+  
+  /* Carrito */
+  .carrito {
+    position: relative;
+    cursor: pointer;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+  }
+  
+  /* Badge con cantidad de items */
+  .badge {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background: #44ef61;
+    color: #fff;
+    font-size: 0.65rem;
+    font-weight: 700;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

@@ -1,0 +1,30 @@
+/* Reset global — elimina márgenes y paddings por defecto del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Variables globales — colores, sombras, tipografía */
+  :root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    /* Paleta elegida, Colores principales */
+    --color-primary: #1b4332;
+    --color-secondary: #2d6a4f;
+    --color-bg: #f0f0f0;
+    --color-text: #1e293b;
+    --color-muted: #64748b;
+    --color-border: #e2e8f0;
+  
+    /* Otros */
+    --radius: 8px;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.14);
+    --transition: 0.2s ease;
+  
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }

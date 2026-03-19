@@ -1,0 +1,60 @@
+/* Contenedor principal de la sección */
+.wrapper {
+  max-width: 1200px;
+  margin: 2rem auto;
+  background: #f0f4f0;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+}
+
+/* Título de la sección */
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--color-text);
+}
+
+/* Grilla de productos */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Paginación */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btnPagination {
+  background: #009ffc;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition), transform var(--transition);
+}
+
+.btnPagination:hover:not(:disabled) {
+  background: #0080cc;
+  transform: scale(1.03);
+}
+
+.btnPagination:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.pageIndicator {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text);
+}

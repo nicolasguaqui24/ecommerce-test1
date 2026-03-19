@@ -1,0 +1,19 @@
+/* contenedor del banner */
+.Banner {
+    width: 100%;
+  }
+  
+  /* imagen ocupa todo el ancho */
+  .Banner img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /*Banner Responsive */
+  @media (max-width: 560px) {
+    .Banner img {
+      height: 180px;
+    }
+  }

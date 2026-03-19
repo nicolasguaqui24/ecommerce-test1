@@ -1,0 +1,40 @@
+/* Barra de navegación */
+.nav {
+    background: var(--color-secondary);
+    padding: 0 2rem;
+    display: flex;
+    justify-content:end;
+
+    gap: 1rem;
+  }
+  
+  /* Links de navegación */
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.75rem 1.2rem;
+    display: inline-block;
+    border-bottom: 3px solid transparent;
+    transition: border-color var(--transition);
+  }
+  
+  /* Efecto hover */
+  .nav a:hover {
+    border-bottom-color: #fff;
+  }
+  
+  /* Responsive */
+  @media (max-width: 560px) {
+    .nav {
+      padding: 0;
+      gap: 0;
+    }
+    .nav a {
+      flex: 1;
+      text-align: center;
+      font-size: 0.75rem;
+      padding: 0.65rem 0.5rem;
+    }
+  }
